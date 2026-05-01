@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev Krishna | Full-Stack Developer & Game Dev</title>
+  <meta name="description" content="Sanjeev Krishna – Full-Stack Developer specializing in MERN stack, real-time systems, AI integration, and Unity 3D game development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">SK<span class="dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://github.com/Jsanjeevkrishna" target="_blank" class="nav-cta">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Sanjeev</span>
+        <span class="title-line gradient-text">Krishna</span>
+      </h1>
+      <p class="hero-subtitle">Full-Stack Developer · AI Integrator · Unity Game Dev</p>
+      <p class="hero-desc">
+        I build real-time web apps, AI-powered systems, and immersive 3D experiences.
+        From collaborative code editors to AI doctors — I ship products that matter.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">17+</span><span class="stat-label">Repositories</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Major Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Tech Domains</span></div>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="photo-glow"></div>
+      <div class="photo-circle-frame" onclick="document.getElementById('photoInput').click()" title="Click to upload your photo">
+        <img src="" alt="Sanjeev Krishna" class="hero-photo" id="heroPhoto" style="display:none" />
+        <div class="upload-placeholder" id="uploadPlaceholder">
+          <div class="upload-icon">📷</div>
+          <div class="upload-label">Click to upload photo</div>
+        </div>
+        <input type="file" id="photoInput" accept="image/*" style="display:none" />
+      </div>
+      <div class="tech-chips">
+        <span class="chip chip1">React</span>
+        <span class="chip chip2">Node.js</span>
+        <span class="chip chip3">Unity</span>
+        <span class="chip chip4">AI/ML</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-tag">Who I Am</div>
+      <h2 class="section-title">Building at the intersection of<br/><span class="gradient-text">Code, AI & Games</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Sanjeev Krishna</strong>, a passionate full-stack developer with a hunger for building products that solve real problems. 
+            I love working across the entire spectrum — from crafting pixel-perfect React UIs to engineering robust Node.js backends, and from integrating LLMs into production apps to building physics-driven Unity 3D games.
+          </p>
+          <p>
+            My most ambitious project, <strong>CodeSync</strong>, is a real-time collaborative code editor (think Google Docs for code) — deployed live on Vercel & Render with Socket.IO, Monaco Editor, and multi-language execution support. 
+            <strong>DR-AI</strong> brings together a MERN stack and DeepSeek AI to create an intelligent medical consultation system with 3D anatomical interaction.
+          </p>
+          <p>
+            On the game dev side, I build immersive Unity experiences — from a horror first-person shooter to a 3D drone vs enemy combat simulation with NavMesh AI and 6-DOF flight physics.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">⚡</div>
+            <div class="about-card-title">Real-Time Systems</div>
+            <div class="about-card-desc">WebSockets, Socket.IO, live collaboration</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🤖</div>
+            <div class="about-card-title">AI Integration</div>
+            <div class="about-card-desc">LLMs, DeepSeek, structured data extraction</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🎮</div>
+            <div class="about-card-title">Unity 3D Games</div>
+            <div class="about-card-desc">NavMesh AI, physics simulation, C# scripting</div>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🚀</div>
+            <div class="about-card-title">Deployment</div>
+            <div class="about-card-desc">Vercel, Render, Railway, MongoDB Atlas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-tag">Tech Arsenal</div>
+      <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-label">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React 19</span>
+            <span class="skill-tag">Vite</span>
+            <span class="skill-tag">Monaco Editor</span>
+            <span class="skill-tag">Socket.io-client</span>
+            <span class="skill-tag">Axios</span>
+            <span class="skill-tag">CSS / HTML5</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-label">Backend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express 5</span>
+            <span class="skill-tag">Socket.IO 4</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Auth</span>
+            <span class="skill-tag">child_process</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-label">Database & Cloud</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB Atlas</span>
+            <span class="skill-tag">Mongoose</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">Railway</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-label">AI / Data</div>
+          <div class="skill-tags">
+            <span class="skill-tag">DeepSeek API</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Data Extraction</span>
+            <span class="skill-tag">Sentiment Analysis</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-label">Game Development</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Unity 3D</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">NavMesh AI</span>
+            <span class="skill-tag">6-DOF Physics</span>
+            <span class="skill-tag">Procedural Audio</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-label">Tools & Workflow</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">npm / Vite</span>
+            <span class="skill-tag">.env Config</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-tag">Featured Work</div>
+      <h2 class="section-title">Projects That <span class="gradient-text">Impress</span></h2>
+      <div class="projects-grid">
+
+        <!-- CODESYNC -->
+        <div class="project-card project-featured" data-category="web">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">⌨️</div>
+            <div class="project-badges">
+              <span class="badge badge-live">Live ↗</span>
+              <span class="badge badge-tech">MERN + WebSockets</span>
+            </div>
+          </div>
+          <h3 class="project-title">CodeSync</h3>
+          <p class="project-subtitle">Real-Time Collaborative Code Editor</p>
+          <p class="project-desc">
+            A full-stack collaborative code editor like Google Docs — but for code. Multiple developers share a live Monaco Editor in real-time via Socket.IO rooms. Supports multi-language execution (JS, Python, C, C++, Java) using a sandboxed child_process runner. Features an extension system for code transforms.
+          </p>
+          <div class="project-tech">
+            <span>React 19</span><span>Node.js</span><span>Socket.IO</span><span>Monaco Editor</span><span>MongoDB</span><span>Vite</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Real-time multi-user sync</div>
+            <div class="highlight">✓ 5-language code execution</div>
+            <div class="highlight">✓ Extension system</div>
+            <div class="highlight">✓ Live on Vercel + Render</div>
+          </div>
+          <div class="project-links">
+            <a href="https://codesync-eta-bay.vercel.app" target="_blank" class="project-link project-link-primary">View Live →</a>
+            <a href="https://github.com/Jsanjeevkrishna/codesync" target="_blank" class="project-link project-link-secondary">GitHub</a>
+          </div>
+        </div>
+
+        <!-- DR AI -->
+        <div class="project-card" data-category="ai">
+          <div class="project-glow project-glow-purple"></div>
+          <div class="project-header">
+            <div class="project-icon">🏥</div>
+            <div class="project-badges">
+              <span class="badge badge-ai">AI Powered</span>
+              <span class="badge badge-tech">MERN + DeepSeek</span>
+            </div>
+          </div>
+          <h3 class="project-title">DR-AI</h3>
+          <p class="project-subtitle">AI Medical Consultation System</p>
+          <p class="project-desc">
+            A full-stack AI doctor built with the MERN stack and DeepSeek API. Features multi-body symptom analysis, 3D anatomical interaction where users click body parts to select symptoms, and an intelligent diagnostic engine that provides medical consultation with reasoning.
+          </p>
+          <div class="project-tech">
+            <span>React</span><span>Node.js</span><span>DeepSeek API</span><span>MongoDB</span><span>3D Anatomy</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ LLM-powered diagnostics</div>
+            <div class="highlight">✓ 3D body interaction</div>
+            <div class="highlight">✓ Multi-symptom analysis</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Jsanjeevkrishna/DR-AI" target="_blank" class="project-link project-link-primary">View Code →</a>
+          </div>
+        </div>
+
+        <!-- 3D DRONE -->
+        <div class="project-card" data-category="game">
+          <div class="project-glow project-glow-green"></div>
+          <div class="project-header">
+            <div class="project-icon">🚁</div>
+            <div class="project-badges">
+              <span class="badge badge-game">Unity 3D</span>
+              <span class="badge badge-tech">C# · NavMesh</span>
+            </div>
+          </div>
+          <h3 class="project-title">3D Drone Combat</h3>
+          <p class="project-subtitle">Drone vs Enemy Combat Simulation</p>
+          <p class="project-desc">
+            A Unity prototype featuring 6-DOF drone flight physics, NavMesh-based enemy AI that tracks and intercepts the drone, procedural audio system that reacts to flight speed, and real-time combat mechanics. Enemies use pathfinding to predict drone trajectory.
+          </p>
+          <div class="project-tech">
+            <span>Unity 3D</span><span>C#</span><span>NavMesh</span><span>6-DOF Physics</span><span>Procedural Audio</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ 6-DOF flight physics</div>
+            <div class="highlight">✓ NavMesh enemy AI</div>
+            <div class="highlight">✓ Procedural audio</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Jsanjeevkrishna/3d-drone" target="_blank" class="project-link project-link-primary">View Code →</a>
+          </div>
+        </div>
+
+        <!-- HORROR GAME -->
+        <div class="project-card" data-category="game">
+          <div class="project-glow project-glow-red"></div>
+          <div class="project-header">
+            <div class="project-icon">👻</div>
+            <div class="project-badges">
+              <span class="badge badge-game">Unity 3D</span>
+              <span class="badge badge-tech">C# · FPS</span>
+            </div>
+          </div>
+          <h3 class="project-title">Horror Game 3D</h3>
+          <p class="project-subtitle">First-Person Horror Experience</p>
+          <p class="project-desc">
+            A first-person 3D horror game built in Unity. Features atmospheric lighting, suspenseful audio design, and AI-driven enemy behavior that reacts to player proximity and sound. Built with C# scripting for game logic, including jump scares, inventory, and puzzle systems.
+          </p>
+          <div class="project-tech">
+            <span>Unity 3D</span><span>C#</span><span>FPS Controller</span><span>AI Enemies</span><span>Audio Design</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Atmospheric horror</div>
+            <div class="highlight">✓ AI enemy behavior</div>
+            <div class="highlight">✓ Puzzle systems</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Jsanjeevkrishna/horror-game3d" target="_blank" class="project-link project-link-primary">View Code →</a>
+          </div>
+        </div>
+
+        <!-- TWITTER SENTIMENT -->
+        <div class="project-card" data-category="ai">
+          <div class="project-glow project-glow-yellow"></div>
+          <div class="project-header">
+            <div class="project-icon">📊</div>
+            <div class="project-badges">
+              <span class="badge badge-ai">ML / Data</span>
+              <span class="badge badge-tech">Python · NLP</span>
+            </div>
+          </div>
+          <h3 class="project-title">Twitter Sentiment Analysis</h3>
+          <p class="project-subtitle">NLP-based Social Media Analysis</p>
+          <p class="project-desc">
+            A machine learning pipeline that classifies Twitter posts by sentiment (positive, negative, neutral). Built using Python, NLP preprocessing, and ML classifiers. The most starred repo on the profile, featuring comprehensive Jupyter notebooks with data visualization.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>Jupyter</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Most starred project ⭐</div>
+            <div class="highlight">✓ End-to-end ML pipeline</div>
+            <div class="highlight">✓ Data visualization</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Jsanjeevkrishna/twitter-sentiment-analysis" target="_blank" class="project-link project-link-primary">View Code →</a>
+          </div>
+        </div>
+
+        <!-- NESTACK API -->
+        <div class="project-card" data-category="ai">
+          <div class="project-glow project-glow-purple"></div>
+          <div class="project-header">
+            <div class="project-icon">🧠</div>
+            <div class="project-badges">
+              <span class="badge badge-live">Deployed</span>
+              <span class="badge badge-tech">Node.js · LLM</span>
+            </div>
+          </div>
+          <h3 class="project-title">LLM Data Extractor API</h3>
+          <p class="project-subtitle">Structured Data Extraction with AI</p>
+          <p class="project-desc">
+            A production Node.js API that uses LLMs to perform structured data extraction from unstructured text. Features per-field confidence scoring, consistent JSON output, mandatory null-returns for missing fields, and automated test case validation. Deployed on Render.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span><span>LLM API</span><span>Express</span><span>JSON Schema</span><span>Render</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">✓ Per-field confidence scores</div>
+            <div class="highlight">✓ Auto test validation</div>
+            <div class="highlight">✓ Live on Render</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Jsanjeevkrishna" target="_blank" class="project-link project-link-primary">View Profile →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's Build Something<br/><span class="gradient-text">Amazing Together</span></h2>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <p class="contact-desc">
+            I'm currently open to new opportunities — whether it's a full-time role, freelance project, or an exciting collaboration. 
+            My door is always open if you want to chat about tech, AI, or game development.
+          </p>
+          <div class="contact-links">
+            <a href="tel:+917799188848" class="contact-link">
+              <span class="contact-link-icon">📞</span>
+              <div>
+                <div class="contact-link-label">Phone</div>
+                <div class="contact-link-val">+91 77991 88848</div>
+              </div>
+            </a>
+            <a href="mailto:jsanjeev5and5@gmail.com" class="contact-link">
+              <span class="contact-link-icon">✉️</span>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-val">jsanjeev5and5@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://github.com/Jsanjeevkrishna" target="_blank" class="contact-link">
+              <span class="contact-link-icon">🐙</span>
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-val">@Jsanjeevkrishna</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-cta-box">
+          <div class="cta-pulse"></div>
+          <p class="cta-label">Ready to connect?</p>
+          <a href="https://github.com/Jsanjeevkrishna" target="_blank" class="btn btn-primary btn-lg">
+            Visit GitHub Profile ↗
+          </a>
+          <p class="cta-sub">17+ public repositories waiting for you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">SK<span class="dot">.</span></div>
+      <p class="footer-copy">Built with 💜 by Sanjeev Krishna · 2026</p>
+      <a href="https://github.com/Jsanjeevkrishna" target="_blank" class="footer-gh">GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
